@@ -1,0 +1,452 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FitLife HealthShare • 18‑Month Growth Strategy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg:#0b1020; --card:#11162a; --muted:#9aa3b2; --brand:#39e6a3; --brand2:#5da9ff; --text:#eef2ff; --accent:#ffc857;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
+  a{color:var(--brand)}
+  .wrap{display:grid;grid-template-columns:280px 1fr;min-height:100vh;}
+  aside{background:linear-gradient(180deg,#0f152b 0%, #0b1020 100%);border-right:1px solid #1c2442;padding:20px;position:sticky;top:0;height:100vh;overflow:auto;}
+  aside h1{font-size:18px;margin:0 0 12px 0;letter-spacing:.4px}
+  .nav a{display:block;padding:10px 12px;border-radius:10px;color:var(--text);text-decoration:none;margin-bottom:6px;font-size:14px}
+  .nav a:hover{background:#182244}
+  main{padding:28px;overflow:auto;}
+  .tag{display:inline-block;padding:4px 8px;border:1px solid #2a335a;border-radius:999px;color:var(--muted);font-size:12px;margin-right:6px}
+  .card{background:var(--card);border:1px solid #1c2442;border-radius:16px;padding:20px;margin-bottom:18px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+  h2{margin:0 0 12px 0;font-size:22px;letter-spacing:.3px}
+  h3{margin:12px 0 6px 0;font-size:16px;color:#cfd6ff}
+  p,li{color:#c3c9db;line-height:1.55}
+  .grid{display:grid;gap:16px}
+  .g-2{grid-template-columns:1fr 1fr}
+  .g-3{grid-template-columns:repeat(3,1fr)}
+  .kpi{display:flex;gap:12px;flex-wrap:wrap}
+  .kpi .tile{flex:1 1 180px;background:#121935;border:1px solid #1d274a;border-radius:14px;padding:14px}
+  .tile h4{margin:0 0 6px 0;color:#dfe6ff;font-weight:600}
+  .num{font-size:24px;font-weight:700;color:var(--brand)}
+  .muted{color:var(--muted)}
+  .row{display:flex;gap:16px;flex-wrap:wrap}
+  .btn{background:linear-gradient(90deg,var(--brand) 0%, #6cf7bd 100%);color:#001b11;border:none;border-radius:999px;padding:10px 14px;font-weight:700;cursor:pointer}
+  .btn.secondary{background:#1a2347;color:#cfd6ff;border:1px solid #243062}
+  details summary{cursor:pointer;list-style:none}
+  details summary::-webkit-details-marker{display:none}
+  .small{font-size:12px;color:var(--muted)}
+  .inputs label{display:block;margin-bottom:8px;font-size:13px;color:#cfd6ff}
+  .inputs input{width:100%;padding:10px;border-radius:10px;border:1px solid #26335f;background:#0f1530;color:#e9eeff}
+  .footer{text-align:center;color:var(--muted);margin:24px 0}
+  .code{background:#0b132a;border:1px solid #203061;border-radius:12px;padding:12px;font-family:ui-monospace, Menlo, Consolas, monospace;white-space:pre-wrap}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <aside>
+    <h1>FitLife Growth Plan</h1>
+    <div class="nav">
+      <a href="#overview">Overview</a>
+      <a href="#positioning">Positioning</a>
+      <a href="#icp">Ideal Customers</a>
+      <a href="#channels">Acquisition Plan</a>
+      <a href="#referral">Referral & Ambassador</a>
+      <a href="#stack">Tech Stack</a>
+      <a href="#dashboard">Interactive Dashboard</a>
+      <a href="#roadmap">18‑Month Roadmap</a>
+      <a href="#calendar">90‑Day Calendar</a>
+      <a href="#assets">Templates & Scripts</a>
+    </div>
+    <div class="card small">
+      <div>Generated: Aug 29, 2025 11:14 AM</div>
+      <div>Make a copy & host wherever you want.</div>
+    </div>
+    <div class="card small">
+      <div>Tip: Your settings auto‑save to this file via <b>localStorage</b>.</div>
+    </div>
+  </aside>
+  <main>
+    <section id="overview" class="card">
+      <h2>Executive Overview</h2>
+      <div class="kpi">
+        <div class="tile"><h4>North Star</h4><div class="num">20,000 Members</div><div class="muted">in 18 months</div></div>
+        <div class="tile"><h4>ARR Target</h4><div class="num">$36M</div><div class="muted">@ $150 ARPU</div></div>
+        <div class="tile"><h4>Blended CAC</h4><div class="num">&lt; $200</div><div class="muted">referrals + ambassadors heavy</div></div>
+        <div class="tile"><h4>Referral Mix</h4><div class="num">40%+</div><div class="muted">members + partners</div></div>
+      </div>
+      <p><b>FitLife HealthShare</b> is a <i>non‑faith‑based</i>, tech‑forward healthcare sharing platform competing with legacy healthshares and modern alternatives (e.g., Medi‑Share, Liberty HealthShare, CrowdHealth). This plan stacks low‑CAC growth loops (referrals & ambassadors) with scalable engines (SEO + paid) and disciplined KPI tracking.</p>
+      <div class="tag">Non‑faith‑based</div>
+      <div class="tag">Transparent pricing</div>
+      <div class="tag">Tech‑first experience</div>
+    </section>
+
+    <section id="positioning" class="card">
+      <h2>Positioning & Messaging</h2>
+      <h3>Tagline</h3>
+      <p class="code">Affordable, transparent healthcare sharing — no faith requirement. Just community.</p>
+      <h3>Key Differentiators</h3>
+      <ul>
+        <li>No faith requirement; inclusive by design.</li>
+        <li>Simple plans, transparent rules, member app for contributions & need tracking.</li>
+        <li>Wellness incentives for health‑conscious members (gyms, wearables, telehealth).</li>
+        <li>Modern brand voice: “Peloton‑meets‑insurance disruptor.”</li>
+      </ul>
+    </section>
+
+    <section id="icp" class="card">
+      <h2>Ideal Customer Profiles</h2>
+      <div class="grid g-2">
+        <div>
+          <h3>Primary</h3>
+          <ul>
+            <li>Freelancers & 1099 workers (creators, rideshare, consultants).</li>
+            <li>Small business owners & remote‑first startups.</li>
+            <li>Young families paying high premiums but low utilization.</li>
+            <li>Fitness‑forward individuals (CrossFit, runners, biohackers).</li>
+          </ul>
+        </div>
+        <div>
+          <h3>High‑Intent Journeys</h3>
+          <ul>
+            <li>“Health insurance alternatives” searches.</li>
+            <li>Tax season: CPAs advising benefits tradeoffs.</li>
+            <li>Gym/clinic conversations about out‑of‑pocket costs.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="channels" class="card">
+      <h2>Acquisition Plan</h2>
+      <div class="grid g-2">
+        <div>
+          <h3>Compounding</h3>
+          <ul>
+            <li><b>SEO</b>: comparison pages (FitLife vs Medi‑Share / Liberty / CrowdHealth), calculators, authority content.</li>
+            <li><b>PR & Podcasts</b>: founder story + savings proof.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Scalable</h3>
+          <ul>
+            <li><b>Paid Search & Social</b>: high‑intent Google; FB/IG lookalikes from members.</li>
+            <li><b>Partnerships</b>: gyms, CPAs, coworking, creator communities.</li>
+          </ul>
+        </div>
+      </div>
+      <details><summary><b>Budget & CAC Model (summary)</b></summary>
+        <div class="grid g-2" style="margin-top:10px">
+          <div class="card">
+            <h3>CAC by Channel (assumptions)</h3>
+            <ul>
+              <li>Referrals: $100</li>
+              <li>Ambassadors: $150</li>
+              <li>Paid Ads: $250</li>
+              <li>SEO/Content: $125</li>
+              <li>PR/Podcasts: $50</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Milestones</h3>
+            <ul>
+              <li>Month 3: 500 members</li>
+              <li>Month 6: 2,000 members</li>
+              <li>Month 12: 7,500 members</li>
+              <li>Month 18: 20,000 members</li>
+            </ul>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <section id="referral" class="card">
+      <h2>Referral & Ambassador Programs</h2>
+      <div class="grid g-2">
+        <div>
+          <h3>Member‑to‑Member Referral</h3>
+          <ul>
+            <li>Give $100 / Get $100 credits.</li>
+            <li>Milestones: 3 → free month; 10 → lifetime locked rate.</li>
+            <li>Unique links + dashboard + “1 away!” nudges.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Ambassadors</h3>
+          <ul>
+            <li>Who: gyms, clinics, CPAs, freelancer leaders, creators.</li>
+            <li>Payouts: $150 → $200 → $250 + residual for top tier.</li>
+            <li>Portal, assets, leaderboards, monthly contests.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack" class="card">
+      <h2>Tech Stack (bootstrap‑friendly)</h2>
+      <div class="grid g-3">
+        <div class="card">
+          <h3>Referrals & Affiliates</h3>
+          <p><b>FirstPromoter</b> for both referrals + ambassadors (Stripe integration).</p>
+        </div>
+        <div class="card">
+          <h3>Email & Automation</h3>
+          <p><b>ActiveCampaign</b> for onboarding + reminder flows.</p>
+        </div>
+        <div class="card">
+          <h3>Site</h3>
+          <p><b>Webflow</b> for fast pages; GA4 + Mixpanel for funnels.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="dashboard" class="card">
+      <h2>Interactive Dashboard (editable assumptions)</h2>
+      <div class="grid g-3">
+        <div class="card inputs">
+          <h3>Assumptions</h3>
+          <label>Avg Monthly Fee (ARPU) <input id="fee" type="number" value="150"/></label>
+          <label>Referral % Mix <input id="mixRef" type="number" value="35"/></label>
+          <label>Ambassador % Mix <input id="mixAmb" type="number" value="25"/></label>
+          <label>Paid Ads % Mix <input id="mixAds" type="number" value="20"/></label>
+          <label>SEO/Organic % Mix <input id="mixSeo" type="number" value="15"/></label>
+          <label>PR/Other % Mix <input id="mixPr" type="number" value="5"/></label>
+          <div class="small">Tip: Channel mix must total 100%.</div>
+          <div class="row" style="margin-top:10px">
+            <button class="btn" id="recalc">Recalculate</button>
+            <button class="btn secondary" id="save">Save Settings</button>
+            <button class="btn secondary" id="reset">Reset</button>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Members Forecast (18 months)</h3>
+          <canvas id="membersChart" height="160"></canvas>
+        </div>
+        <div class="card">
+          <h3>Channel Mix</h3>
+          <canvas id="mixChart" height="160"></canvas>
+        </div>
+      </div>
+      <div class="grid g-2" style="margin-top:16px">
+        <div class="card">
+          <h3>MRR Forecast</h3>
+          <canvas id="mrrChart" height="150"></canvas>
+        </div>
+        <div class="card">
+          <h3>CAC Target vs Trend (illustrative)</h3>
+          <canvas id="cacChart" height="150"></canvas>
+        </div>
+      </div>
+      <p class="small">Interactive charts use your assumptions + milestone targets to interpolate monthly projections. Replace with live data later (Stripe, GA4, FirstPromoter).</p>
+    </section>
+
+    <section id="roadmap" class="card">
+      <h2>18‑Month Roadmap</h2>
+      <div class="grid g-2">
+        <div class="card">
+          <h3>Months 1–3 • Foundation</h3>
+          <ul>
+            <li>Launch referral + ambassador pilot (20 partners).</li>
+            <li>Comparison pages + calculators + PR kickoff.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Months 4–6 • Traction</h3>
+          <ul>
+            <li>100+ ambassadors, referral contest, ad tests scaled.</li>
+            <li>Target: 2,000 members, CAC ≤ $200.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Months 7–12 • Scale</h3>
+          <ul>
+            <li>Lookalikes, national PR, influencer affiliates.</li>
+            <li>Target: 7,500 members, churn &lt; 8%.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Months 13–18 • Exponential</h3>
+          <ul>
+            <li>$200k+/mo ads, 2,000 ambassadors, residual commissions.</li>
+            <li>Target: 20,000 members, $3M MRR.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="calendar" class="card">
+      <h2>90‑Day Tactical Calendar</h2>
+      <details open><summary><b>Month 1 • Foundation</b></summary>
+        <ul>
+          <li>Build pages (FitLife vs Medi‑Share / Liberty / CrowdHealth).</li>
+          <li>Set up FirstPromoter + Stripe; launch Give $100/Get $100.</li>
+          <li>Recruit 20 pilot ambassadors; 3 podcasts booked.</li>
+          <li>Spin up Google Ads test for high‑intent terms.</li>
+        </ul>
+      </details>
+      <details><summary><b>Month 2 • Traction</b></summary>
+        <ul>
+          <li>Referral contest; Ambassador leaderboard & webinar.</li>
+          <li>FB/IG tests; publish calculator; 5 blog posts.</li>
+          <li>Partnership outreach: coworking + CPAs.</li>
+        </ul>
+      </details>
+      <details><summary><b>Month 3 • Proof</b></summary>
+        <ul>
+          <li>Lookalikes from first 500 members; retargeting funnel.</li>
+          <li>Press: “FitLife hits 2,000 members in 90 days.”</li>
+          <li>Ambassador contest ($1k prizes); Founding Member badges.</li>
+        </ul>
+      </details>
+    </section>
+
+    <section id="assets" class="card">
+      <h2>Templates & Scripts</h2>
+      <h3>Member Referral Email</h3>
+      <div class="code">Subject: I just joined FitLife — get $100 off
+
+Hey [First Name],
+I joined FitLife HealthShare — a modern, non‑faith‑based alternative to insurance.
+Join via my link to get $100 off your first month (I get $100 too): [Referral Link]
+– [Your Name]</div>
+      <h3>Ambassador Outreach (Gyms/CPAs)</h3>
+      <div class="code">Hi [First Name],
+We help your members/clients save 30–50% on healthcare. You earn $150–$250 per signup.
+Want a 10‑minute chat?
+– FitLife Ambassador Team</div>
+      <button class="btn secondary" onclick="window.print()">Print / Export PDF</button>
+    </section>
+
+    <div class="footer">© FitLife HealthShare • Strategy file generated for internal use. Replace example numbers with live data.</div>
+  </main>
+</div>
+
+<script>
+// ---------- Helpers ----------
+function months(n) {
+  const arr=[];
+  const start = new Date();
+  for(let i=0;i<n;i++){ const d=new Date(start.getFullYear(), start.getMonth()+i, 1); arr.push(d.toLocaleString('en-US',{month:'short'})); }
+  return arr;
+}
+function lerp(a,b,t){return a+(b-a)*t;}
+
+// ---------- Assumptions + storage ----------
+const els = {
+  fee: document.getElementById('fee'),
+  mixRef: document.getElementById('mixRef'),
+  mixAmb: document.getElementById('mixAmb'),
+  mixAds: document.getElementById('mixAds'),
+  mixSeo: document.getElementById('mixSeo'),
+  mixPr: document.getElementById('mixPr'),
+  recalc: document.getElementById('recalc'),
+  save: document.getElementById('save'),
+  reset: document.getElementById('reset'),
+};
+const defaultState = {
+  fee:150, mix:[35,25,20,15,5],
+  milestones:{3:500, 6:2000, 12:7500, 18:20000}
+};
+function loadState(){
+  const s = JSON.parse(localStorage.getItem('fitlife_state')||'null');
+  const state = s||defaultState;
+  els.fee.value = state.fee;
+  [els.mixRef,els.mixAmb,els.mixAds,els.mixSeo,els.mixPr].forEach((e,i)=>e.value=(state.mix[i]||0));
+  return state;
+}
+function saveState(state){
+  localStorage.setItem('fitlife_state', JSON.stringify(state));
+}
+
+// ---------- Projection logic ----------
+function buildSeries(state){
+  // piecewise linear between milestones across 18 months
+  const M = Array.from({length:18}, (_,i)=>i+1);
+  const targets = state.milestones;
+  const points = [ [1, 50], [3, targets[3]], [6, targets[6]], [12, targets[12]], [18, targets[18]] ]; // start with tiny base
+  const series = [];
+  for (let m of M){
+    // find segment
+    let p=points.findIndex(pt=>pt[0]>=m);
+    if (p<=0) { series.push(points[0][1]); continue; }
+    const [m2,y2]=points[p];
+    const [m1,y1]=points[p-1];
+    const t=(m-m1)/(m2-m1);
+    series.push(Math.round(lerp(y1,y2,t)));
+  }
+  return series;
+}
+
+let state = loadState();
+
+// ---------- Charts ----------
+const labels = months(18);
+const membersData = buildSeries(state);
+const ctxMembers = document.getElementById('membersChart');
+const ctxMix = document.getElementById('mixChart');
+const ctxMRR = document.getElementById('mrrChart');
+const ctxCAC = document.getElementById('cacChart');
+
+const membersChart = new Chart(ctxMembers, {
+  type:'line',
+  data:{labels, datasets:[{label:'Members', data:membersData, tension:.25, fill:false}]},
+  options:{plugins:{legend:{display:false}}, scales:{y:{beginAtZero:true}}}
+});
+
+function channelMix(){
+  return [Number(els.mixRef.value),Number(els.mixAmb.value),Number(els.mixAds.value),Number(els.mixSeo.value),Number(els.mixPr.value)];
+}
+
+const mixChart = new Chart(ctxMix, {
+  type:'doughnut',
+  data:{labels:['Referrals','Ambassadors','Paid Ads','SEO/Organic','PR/Other'], datasets:[{data:channelMix()}]},
+  options:{plugins:{legend:{position:'bottom'}}}
+});
+
+function computeMRR(){
+  const fee = Number(els.fee.value||150);
+  return membersChart.data.datasets[0].data.map(m=>m*fee);
+}
+const mrrChart = new Chart(ctxMRR, {
+  type:'bar',
+  data:{labels, datasets:[{label:'MRR ($)', data:computeMRR()}]},
+  options:{plugins:{legend:{display:false}}, scales:{y:{beginAtZero:true}}}
+});
+
+const cacChart = new Chart(ctxCAC, {
+  type:'line',
+  data:{labels: labels.slice(0,6), datasets:[{label:'Blended CAC (illustrative)', data:[300,280,260,240,220,200], fill:false}]},
+  options:{plugins:{legend:{display:false}}, scales:{y:{beginAtZero:false}}}
+});
+
+// ---------- Buttons ----------
+els.recalc.onclick = ()=>{
+  // validate mix = 100
+  const mix = channelMix();
+  const sum = mix.reduce((a,b)=>a+b,0);
+  if (sum !== 100) { alert('Channel mix must total 100%. It is currently '+sum+'%.'); return; }
+  membersChart.data.datasets[0].data = buildSeries(state);
+  membersChart.update();
+  mixChart.data.datasets[0].data = mix;
+  mixChart.update();
+  mrrChart.data.datasets[0].data = computeMRR();
+  mrrChart.update();
+};
+
+els.save.onclick = ()=>{
+  const st = { fee:Number(els.fee.value), mix:channelMix(), milestones:state.milestones };
+  saveState(st);
+  alert('Settings saved to your browser.');
+};
+els.reset.onclick = ()=>{
+  localStorage.removeItem('fitlife_state');
+  state = loadState();
+  els.recalc.click();
+};
+</script>
+</body>
+</html>
